@@ -1,0 +1,18 @@
+max.user.rating: 5
+min.user.rating: 1
+rating.fetch.limit: 25
+
+server:
+  port: 0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka
+  instance:
+    instanceId: ${spring.application.name}:${random.int}        
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: rating-service
+  cloud:
+    config:
+      name: rating
+      uri: http://localhost:8888
+
+
+        

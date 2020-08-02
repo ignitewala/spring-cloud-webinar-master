@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#      - id: gogogle
+#        uri: https://www.google.com/
+#        predicates:
+#        - Path=/google/**
+#      - id: fb
+#        uri: https://www.facebook.com/
+#        predicates:
+#        - Path=/facebook/**
+        
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
